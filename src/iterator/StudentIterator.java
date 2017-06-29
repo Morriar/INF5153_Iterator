@@ -29,6 +29,10 @@ public class StudentIterator implements IIterator<Student> {
 
     @Override
     public boolean hasNext() {
+        if(students == null) {
+            return false;
+        }
+        
         return currentIndex < students.size();
     }
 
