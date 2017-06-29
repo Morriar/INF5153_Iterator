@@ -17,5 +17,5 @@ package iterator;
 
 public interface IIterable<E> {
 
-    public IIterator iterator();
+    public IIterator<E> iterator();
 }
